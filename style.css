@@ -1,0 +1,252 @@
+/*CSS reset*/
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+	background-color: #e2e8f0;
+    height: 100%;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /*Actual start of css*/
+
+ul {
+  list-style: none;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+    background-color: #e2e8f0;
+}
+input {
+    background-color: #e2e8f0;
+}
+
+button {
+    background-color: #1992d4;
+}
+
+header {
+    grid-area: 1 / 2 / 2 / auto;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.header_left {
+  grid-column: 1 / 2;
+}
+
+.header_right {
+  grid-column: 2 / 3;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: #1992d4;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    color: #ffffff;
+}
+
+.block_zero_left, .block_one_left, .block_two_left {
+	margin-left: 1rem;
+	margin-top: 1rem;
+}
+
+.block_zero_left {
+	font-size: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.block_one_left, .block_two_left {
+	margin-bottom: 1rem;
+}
+
+.main {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  background-color: #e2e8f0;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.trending {
+    grid-area: 2 / 2 / auto / auto;
+}
+
+.announcements {
+    grid-area: 1 / 2 / auto / auto;
+}
+
+.contain {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.contain img {
+	margin-right: 0.5rem;
+}
+
+.projects > p, .announcements > p, .trending > p {
+  margin-bottom: 0.5rem;
+}
+
+.projects {
+  margin-right: 5rem;
+  grid-row: 1 / 3;
+}
+
+.main_container {
+	height: 100vh;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main_containers {
+  border-left: 8px solid gold;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.announcements {
+  grid-row: 1 / 2;
+  margin-bottom: 2rem;
+}
+
+.trending {
+  grid-row: 2 / 3;
+}
+
+.announcement_container, .trending_container {
+	background-color: #ffffff;
+	margin-right: 1.5rem;
+	border-radius: 5px;
+}
+
+.announcement_container {
+	padding: 1.5rem;
+}
+
+.trending_container {
+	padding: 0.5rem;
+}
+
+.points_announcements, .points_trending {
+	margin-bottom: 1rem;
+}
+
+.search {
+	margin-top: 2rem;
+	margin-left: 2rem;
+	margin-bottom: 1rem;
+	display: inline-block;
+}
+
+img {
+	display: inline-block; 
+    vertical-align: middle;
+    margin-right: 10px; 
+}
+
+input {
+	border-radius: 10px;
+	border-style: none;
+	width: 500px;
+}
+
+.right_name {
+	justify-self: end;
+	margin-top: 1.5rem;
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+	margin-right: 5rem;
+	display: flex;
+	gap: 20px;
+}
+
+.right_name div {
+	margin-top: 0.5rem;
+}
+
+
+button {
+	width: 6rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+	border-radius: 20px;
+	border-style: none;
+	margin-bottom: 2rem;
+}
+.buttons_right {
+	justify-self: end;
+	margin-right: 5rem;
+	display: flex;
+	gap: 20px;
+}
+
+.header_left_welcome {
+	margin-left: 2rem;
+	margin-bottom: 1rem;
+	display: flex;
+}
+
+hr {
+	margin-bottom: 1rem;
+}
