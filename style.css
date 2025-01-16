@@ -167,6 +167,20 @@ header {
   background-color: #ffffff;
   border-radius: 5px;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.icons img {
+  max-width: 2rem;
+  max-height: 2rem;
 }
 
 .announcement_container, .trending_container {
