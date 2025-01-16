@@ -1,4 +1,8 @@
 /*CSS reset*/
+/*probably need to download the font, but idgaf. I used the link part alone to get the font*/ 
+body {
+  font-family: Roboto;
+}
 
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
@@ -109,7 +113,7 @@ header {
 
 .block_one_left {
 	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 5rem;
 }
 
 .main {
@@ -124,14 +128,12 @@ header {
 
 .trending {
     grid-area: 2 / 2 / 3 / 3;
+    margin-top: 1rem;
 }
 
 .announcements {
     grid-area: 1 / 2 / 2 / 3;
-}
-
-.announcements {
-  grid-row: 1 / 2;
+    margin-bottom: 2rem;
 }
 
 .contain {
@@ -236,6 +238,7 @@ input {
 
 
 button {
+  color: #ffffff;
 	width: 6rem;
 	padding-top: 0.3rem;
 	padding-bottom: 0.3rem;
@@ -278,4 +281,12 @@ hr {
 
 .bird {
   background-color: rgb(105, 105, 6);
+}
+
+.header_left_welcome p {
+  font-weight: bold;
+}
+
+.right_name div, .main > div > p, .main_containers p:first-of-type, .points_announcements p:first-of-type, .points_trending p:first-of-type {
+  font-weight: bold;
 }
