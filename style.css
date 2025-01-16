@@ -260,3 +260,22 @@ hr {
 	margin-bottom: 1rem;
 }
 
+.contain .pfp {
+  border-radius: 50px;
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+.dogge {
+  background-color: rgb(247, 194, 96);
+}
+
+.penguin {
+  background-color: rgb(168, 243, 243);
+}
+
+.bird {
+  background-color: rgb(105, 105, 6);
+}
